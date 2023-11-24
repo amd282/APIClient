@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MjxtlKJ9mONueYySNyXeqR+1SyicfeSMdFb9WKCWVCk/oqMEImD181efEna+IPzNLuCJ8lpxahctdg+xT0ozUw==",
+  "dgSpecHash": "ihHtd6amiUmiFdKaq/4wtvfZLJSQp4xR9ltPLJRp9zFTLlWJzuYT9BYTrjWGquSkpkWyJ5Fcrs/ABRQkcXBjtA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\arafa\\Documents\\GitHub\\WeatherAPI\\APIClient\\APIClient.csproj",
+  "projectFilePath": "C:\\Users\\arafa\\Documents\\GitHub\\APIClient\\APIClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\arafa\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\arafa\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

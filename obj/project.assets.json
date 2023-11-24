@@ -9550,11 +9550,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\arafa\\Documents\\GitHub\\WeatherAPI\\APIClient\\APIClient.csproj",
+      "projectUniqueName": "C:\\Users\\arafa\\Documents\\GitHub\\APIClient\\APIClient.csproj",
       "projectName": "APIClient",
-      "projectPath": "C:\\Users\\arafa\\Documents\\GitHub\\WeatherAPI\\APIClient\\APIClient.csproj",
+      "projectPath": "C:\\Users\\arafa\\Documents\\GitHub\\APIClient\\APIClient.csproj",
       "packagesPath": "C:\\Users\\arafa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\arafa\\Documents\\GitHub\\WeatherAPI\\APIClient\\obj\\",
+      "outputPath": "C:\\Users\\arafa\\Documents\\GitHub\\APIClient\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\arafa\\AppData\\Roaming\\NuGet\\NuGet.Config",
