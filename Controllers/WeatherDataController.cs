@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Text;
+using APIClient.DTO;
 
 namespace APIClient.Controllers
 {
@@ -17,17 +18,15 @@ namespace APIClient.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            List<WeatherData> weatherdatalist = new List<WeatherData>();
             HttpResponseMessage response = _client.GetAsync(_client.BaseAddress + "/WeatherData/GetWeatherData").Result;
 
-            if (response.IsSuccessStatusCode)
-            {
-                string data = response.Content.ReadAsStringAsync().Result;
-                weatherdatalist = JsonConvert.DeserializeObject<List<WeatherData>>(data);
-            }
-            return View(weatherdatalist);
+          
+                var json = await response.Content.ReadAsStringAsync();
+                var weatherDataList = JsonConvert.DeserializeObject<List<WeatherDataDto>>(json);
+            
+            return View(weatherDataList);
         }
 
         [HttpGet]

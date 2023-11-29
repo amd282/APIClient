@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arafa\\Documents\\GitHub\\APIClient\\APIClient.csproj": {}
+    "F:\\source\\APIClient\\APIClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arafa\\Documents\\GitHub\\APIClient\\APIClient.csproj": {
+    "F:\\source\\APIClient\\APIClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arafa\\Documents\\GitHub\\APIClient\\APIClient.csproj",
+        "projectUniqueName": "F:\\source\\APIClient\\APIClient.csproj",
         "projectName": "APIClient",
-        "projectPath": "C:\\Users\\arafa\\Documents\\GitHub\\APIClient\\APIClient.csproj",
-        "packagesPath": "C:\\Users\\arafa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arafa\\Documents\\GitHub\\APIClient\\obj\\",
+        "projectPath": "F:\\source\\APIClient\\APIClient.csproj",
+        "packagesPath": "C:\\Users\\Alex Damovski\\.nuget\\packages\\",
+        "outputPath": "F:\\source\\APIClient\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\arafa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alex Damovski\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
