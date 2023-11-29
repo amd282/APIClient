@@ -1,8 +1,6 @@
-﻿using Newtonsoft.Json;
-
-namespace APIClient.Models
+﻿namespace APIClient.DTO
 {
-    public class WeatherData
+    public class WeatherDataDto
     {
         public int Id { get; set; }
         public int CityId { get; set; }
@@ -10,7 +8,6 @@ namespace APIClient.Models
         public decimal Temperature { get; set; }
         public decimal WindSpeed { get; set; }
         public DateTime Date { get; set; }
-        [JsonProperty("cityName")]
-        public Cities city { get; set; }
+        public string Name { get; set; }
     }
 }
