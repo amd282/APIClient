@@ -36,7 +36,7 @@ namespace APIClient.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(WeatherData model)
+        public IActionResult Create(WeatherDataDto model)
         {
             try
             {
@@ -60,18 +60,18 @@ namespace APIClient.Controllers
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            WeatherData weatherdata = new WeatherData();
+            WeatherDataDto weatherdata = new WeatherDataDto();
             HttpResponseMessage response = _client.GetAsync(_client.BaseAddress + "/WeatherData/GetWeatherData/" + id).Result;
             if (response.IsSuccessStatusCode)
             {
                 string data = response.Content.ReadAsStringAsync().Result;
-                weatherdata = JsonConvert.DeserializeObject<WeatherData>(data);
+                weatherdata = JsonConvert.DeserializeObject<WeatherDataDto>(data);
             }
             return View(weatherdata);
         }
 
         [HttpPost]
-        public IActionResult Edit(WeatherData model)
+        public IActionResult Edit(WeatherDataDto model)
         {
             string data = JsonConvert.SerializeObject(model);
             StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
@@ -86,12 +86,12 @@ namespace APIClient.Controllers
         [HttpGet]
         public IActionResult Delete(int id)
         {
-            WeatherData weatherdata = new WeatherData();
+            WeatherDataDto weatherdata = new WeatherDataDto();
             HttpResponseMessage response = _client.GetAsync(_client.BaseAddress + "/WeatherData/GetWeatherData/" + id).Result;
             if (response.IsSuccessStatusCode)
             {
                 string data = response.Content?.ReadAsStringAsync().Result;
-                weatherdata = JsonConvert.DeserializeObject<WeatherData>(data);
+                weatherdata = JsonConvert.DeserializeObject<WeatherDataDto>(data);
             }
             return View(weatherdata);
         }
