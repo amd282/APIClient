@@ -1,4 +1,5 @@
-﻿using APIClient.Models;
+﻿using APIClient.DTO;
+using APIClient.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Text;
@@ -106,6 +107,20 @@ namespace APIClient.Controllers
                 return RedirectToAction("Index");
             }
             return View(response);
+        }
+
+        [HttpGet]
+        public IActionResult Details(int id)
+        {
+            List<WeatherDataDto> weatherdatalist = new List<WeatherDataDto>();
+            HttpResponseMessage response = _client.GetAsync(_client.BaseAddress + "/WeatherData/GetWeatherDataByCityId/" + id).Result;
+
+            if (response.IsSuccessStatusCode)
+            {
+                string data = response.Content.ReadAsStringAsync().Result;
+                weatherdatalist = JsonConvert.DeserializeObject<List<WeatherDataDto>>(data);
+            }
+            return View(weatherdatalist);
         }
     }
 }

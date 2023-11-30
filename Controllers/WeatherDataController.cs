@@ -23,8 +23,8 @@ namespace APIClient.Controllers
             HttpResponseMessage response = _client.GetAsync(_client.BaseAddress + "/WeatherData/GetWeatherData").Result;
 
           
-                var json = await response.Content.ReadAsStringAsync();
-                var weatherDataList = JsonConvert.DeserializeObject<List<WeatherDataDto>>(json);
+            var json = await response.Content.ReadAsStringAsync();
+            var weatherDataList = JsonConvert.DeserializeObject<List<WeatherDataDto>>(json);
             
             return View(weatherDataList);
         }

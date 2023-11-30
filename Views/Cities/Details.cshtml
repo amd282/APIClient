@@ -1,0 +1,38 @@
+﻿@model List<APIClient.DTO.WeatherDataDto>
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Weather Data Details</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>City ID</th>
+            <th>Conditions</th>
+            <th>Temperature</th>
+            <th>Wind Speed</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.CityId</td>
+                <td>@item.Conditions</td>
+                <td>@item.Temperature</td>
+                <td>@item.WindSpeed</td>
+                <td>@item.Date</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
