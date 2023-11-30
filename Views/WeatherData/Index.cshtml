@@ -28,9 +28,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Date)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
+
             <th></th>
         </tr>
     </thead>
@@ -52,13 +50,11 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Date)
             </td>
+
             <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+                @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
                 @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+                @Html.ActionLink("Delete", "Delete", new { id=item.id})
             </td>
         </tr>
 }
