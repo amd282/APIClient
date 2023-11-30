@@ -9,73 +9,77 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = APIClient
 build_property.RootNamespace = APIClient
-build_property.ProjectDir = F:\source\APIClient\
+build_property.ProjectDir = C:\Users\arafa\Documents\GitHub\APIClient\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = F:\source\APIClient
+build_property.MSBuildProjectDirectory = C:\Users\arafa\Documents\GitHub\APIClient
 build_property._RazorSourceGeneratorDebug = 
 
-[F:/source/APIClient/Views/Cities/Create.cshtml]
+[C:/Users/arafa/Documents/GitHub/APIClient/Views/Cities/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/source/APIClient/Views/Cities/Delete.cshtml]
+[C:/Users/arafa/Documents/GitHub/APIClient/Views/Cities/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/source/APIClient/Views/Cities/Edit.cshtml]
+[C:/Users/arafa/Documents/GitHub/APIClient/Views/Cities/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/arafa/Documents/GitHub/APIClient/Views/Cities/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/source/APIClient/Views/Cities/Index.cshtml]
+[C:/Users/arafa/Documents/GitHub/APIClient/Views/Cities/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/source/APIClient/Views/Home/Index.cshtml]
+[C:/Users/arafa/Documents/GitHub/APIClient/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/source/APIClient/Views/Home/Privacy.cshtml]
+[C:/Users/arafa/Documents/GitHub/APIClient/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/source/APIClient/Views/Shared/Error.cshtml]
+[C:/Users/arafa/Documents/GitHub/APIClient/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/source/APIClient/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/arafa/Documents/GitHub/APIClient/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/source/APIClient/Views/WeatherData/Create.cshtml]
+[C:/Users/arafa/Documents/GitHub/APIClient/Views/WeatherData/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VhdGhlckRhdGFcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/source/APIClient/Views/WeatherData/Delete.cshtml]
+[C:/Users/arafa/Documents/GitHub/APIClient/Views/WeatherData/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VhdGhlckRhdGFcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/source/APIClient/Views/WeatherData/Edit.cshtml]
+[C:/Users/arafa/Documents/GitHub/APIClient/Views/WeatherData/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VhdGhlckRhdGFcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/source/APIClient/Views/WeatherData/Index.cshtml]
+[C:/Users/arafa/Documents/GitHub/APIClient/Views/WeatherData/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VhdGhlckRhdGFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/source/APIClient/Views/WeatherForecast/Index.cshtml]
+[C:/Users/arafa/Documents/GitHub/APIClient/Views/WeatherForecast/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VhdGhlckZvcmVjYXN0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/source/APIClient/Views/_ViewImports.cshtml]
+[C:/Users/arafa/Documents/GitHub/APIClient/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/source/APIClient/Views/_ViewStart.cshtml]
+[C:/Users/arafa/Documents/GitHub/APIClient/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/source/APIClient/Views/Shared/_Layout.cshtml]
+[C:/Users/arafa/Documents/GitHub/APIClient/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-undgah4i09
