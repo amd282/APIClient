@@ -106,5 +106,91 @@ namespace APIClient.Controllers
             }
             return View(response);
         }
+
+        [HttpGet]
+        public IActionResult Patch(int id)
+        {
+            WeatherDataDto originalWeatherData = GetWeatherDataById(id);
+
+            if (originalWeatherData == null)
+            {
+                return NotFound($"Weather data not found with id: {id}");
+            }
+
+            return View(originalWeatherData);
+        }
+
+        [HttpPost]
+        public IActionResult Patch(int id, WeatherDataDto patchDto)
+        {
+            try
+            {
+                if (patchDto == null)
+                {
+                    return BadRequest("Patch data is null");
+                }
+
+                WeatherDataDto originalWeatherData = GetWeatherDataById(id);
+
+                if (originalWeatherData == null)
+                {
+                    return NotFound($"Weather data not found with id: {id}");
+                }
+
+                // Update only the non-null properties
+                if (patchDto.Conditions != null)
+                {
+                    originalWeatherData.Conditions = patchDto.Conditions;
+                }
+
+                if (patchDto.Temperature.HasValue)
+                {
+                    originalWeatherData.Temperature = patchDto.Temperature.Value;
+                }
+
+                if (patchDto.WindSpeed.HasValue)
+                {
+                    originalWeatherData.WindSpeed = patchDto.WindSpeed.Value;
+                }
+
+                if (patchDto.Date.HasValue)
+                {
+                    originalWeatherData.Date = patchDto.Date.Value;
+                }
+
+                string data = JsonConvert.SerializeObject(originalWeatherData);
+                StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
+                HttpResponseMessage response = _client.PatchAsync($"{_client.BaseAddress}/WeatherData/PatchWeatherData/{id}", content).Result;
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    TempData["errorMessage"] = "Failed to update weather data";
+                    return View(originalWeatherData);
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["errorMessage"] = ex.Message;
+                return View();
+            }
+        }
+
+        private WeatherDataDto GetWeatherDataById(int id)
+        {
+            HttpResponseMessage response = _client.GetAsync($"{_client.BaseAddress}/WeatherData/GetWeatherData/{id}").Result;
+
+            if (response.IsSuccessStatusCode)
+            {
+                string data = response.Content.ReadAsStringAsync().Result;
+                return JsonConvert.DeserializeObject<WeatherDataDto>(data);
+            }
+
+            return null;
+        }
+
     }
 }
