@@ -122,5 +122,80 @@ namespace APIClient.Controllers
             }
             return View(weatherdatalist);
         }
+
+        [HttpGet]
+        public IActionResult Patch(int id)
+        {
+            Cities originalCityData = GetCityById(id);
+
+            if (originalCityData == null)
+            {
+                return NotFound($"City not found with name: {id}");
+            }
+
+            return View(originalCityData);
+        }
+
+        [HttpPost]
+        public IActionResult Patch(int id, Cities patchDto)
+        {
+            try
+            {
+                if (patchDto == null)
+                {
+                    return BadRequest("Patch data is null");
+                }
+
+                Cities originalCityData = GetCityById(id);
+
+                if (originalCityData == null)
+                {
+                    return NotFound($"City not found with id: {id}");
+                }
+
+                // Update only the non-null properties
+                if (patchDto.Name != null)
+                {
+                    originalCityData.Name = patchDto.Name;
+                }
+
+                if (patchDto.Province != null)
+                {
+                    originalCityData.Province = patchDto.Province;
+                }
+
+                string data = JsonConvert.SerializeObject(originalCityData);
+                StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
+                HttpResponseMessage response = _client.PatchAsync(_client.BaseAddress + "/Cities/PatchCity/" + id, content).Result;
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    TempData["errorMessage"] = "Failed to update weather data";
+                    return View(originalCityData);
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["errorMessage"] = ex.Message;
+                return View();
+            }
+        }
+
+        private Cities GetCityById(int id)
+        {
+            HttpResponseMessage response = _client.GetAsync(_client.BaseAddress + "/Cities/GetCityById/" + id).Result;
+
+            if (response.IsSuccessStatusCode)
+            {
+                string data = response.Content.ReadAsStringAsync().Result;
+                return JsonConvert.DeserializeObject<Cities>(data);
+            }
+
+            return null;
+        }
     }
 }
