@@ -30,6 +30,24 @@ namespace APIClient.Controllers
         }
 
         [HttpGet]
+        
+        public async Task<IActionResult> Search(int? cityId)
+        {
+            HttpResponseMessage response = await _client.GetAsync($"{_client.BaseAddress}/WeatherData/GetWeatherDataByCityId/{cityId}");
+            var json = await response.Content.ReadAsStringAsync();
+            if (json.Contains("NaN")) {
+                return RedirectToAction("Index","WeatherData");
+            }
+
+           
+            var weatherDataList = JsonConvert.DeserializeObject<List<WeatherDataDto>>(json);
+
+
+            return View(weatherDataList);
+        }
+
+
+        [HttpGet]
         public IActionResult Create()
         {
             return View();

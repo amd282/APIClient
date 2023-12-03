@@ -673,3 +673,4 @@ F:\source\APIClient\obj\Debug\net6.0\scopedcss\projectbundle\APIClient.bundle.sc
 F:\source\APIClient\obj\Debug\net6.0\APIClient.csproj.CopyComplete
 F:\source\APIClient\obj\Debug\net6.0\APIClient.genruntimeconfig.cache
 F:\source\APIClient\obj\Debug\net6.0\ref\APIClient.dll
+F:\source\APIClient\obj\Debug\net6.0\APIClient.sourcelink.json
