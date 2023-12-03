@@ -8,13 +8,14 @@ namespace APIClient.Controllers
 {
     public class CitiesController : Controller
     {
-        Uri baseAddress = new Uri("https://localhost:7156/api");
+        Uri baseAddress = new Uri("https://34.160.35.134.nip.io/weatherapi/api");
         private readonly HttpClient _client;
 
         public CitiesController()
         {
             _client = new HttpClient();
             _client.BaseAddress = baseAddress;
+            _client.DefaultRequestHeaders.Add("apikey", "VA-Lab3Demo");
         }
 
         [HttpGet]
