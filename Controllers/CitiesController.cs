@@ -198,5 +198,21 @@ namespace APIClient.Controllers
 
             return null;
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Search(int id)
+        {
+            HttpResponseMessage response = await _client.GetAsync(_client.BaseAddress + "/Cities/GetCityById/" + id);
+
+            string data = await response.Content.ReadAsStringAsync();
+            var city = JsonConvert.DeserializeObject<Cities>(data);
+
+            var cityList = new List<Cities> { city };
+
+            return View(cityList);
+        }
     }
+
+   
+
 }

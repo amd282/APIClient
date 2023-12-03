@@ -9,6 +9,15 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+<div>
+    <form asp-action="Search" method="get">
+        <label for="Id">Search by City ID:</label>
+        <input type="text" id="Id" name="Id" value="@ViewBag.Id" />
+        <button type="submit">Search</button>
+    </form>
+</div>
+
 <table class="table">
     <thead>
         <tr>

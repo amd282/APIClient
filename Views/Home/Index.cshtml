@@ -3,6 +3,23 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <button type="button" onclick="redirectToCities()">Get All Cities</button>
 </div>
+
+<div class="text-center">
+<button type="button" onclick="redirectToWeatherData()">Get All Weather Data</button>
+</div>
+
+<script>
+    function redirectToCities() {
+        
+        window.location.href = '/Cities/index';
+    }
+</script>
+
+<script>
+    function redirectToWeatherData() {
+       
+        window.location.href = '/Weatherdata/index';
+    }
+</script>

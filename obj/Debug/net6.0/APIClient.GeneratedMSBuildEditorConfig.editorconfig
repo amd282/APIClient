@@ -10,6 +10,8 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = APIClient
 build_property.RootNamespace = APIClient
 build_property.ProjectDir = F:\source\APIClient\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
@@ -24,12 +26,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/source/APIClient/Views/Cities/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/source/APIClient/Views/Cities/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/source/APIClient/Views/Cities/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/source/APIClient/Views/Cities/Patch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXFBhdGNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/source/APIClient/Views/Cities/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXFNlYXJjaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/source/APIClient/Views/Home/Index.cshtml]
@@ -62,6 +76,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/source/APIClient/Views/WeatherData/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VhdGhlckRhdGFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/source/APIClient/Views/WeatherData/Patch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VhdGhlckRhdGFcUGF0Y2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/source/APIClient/Views/WeatherData/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VhdGhlckRhdGFcU2VhcmNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/source/APIClient/Views/WeatherForecast/Index.cshtml]
